@@ -1,0 +1,6 @@
+{
+  "name": "Portfolio",
+  "tagline": "",
+  "body": "# Patrick Noll's Portfolio\r\n\r\nUNDER CONSTRUCTION\r\n\r\nThe projects below include current and previous products that I've designed.  I'll walk through the design process and analysis procedures for each.\r\n\r\n## Adventure Motorcycle Bar Risers\r\n\r\nThis product is being created to fix issues I've found while riding.\r\n\r\n## Differential Mounts\r\n\r\nThis part was created for the WSU Formula SAE team.\r\n\r\nThe part was designed to:  \r\n1. Hold axles in correct alignment relative to wheel  \r\n2. Mate to differential  \r\n3. Mate to tripod joints  \r\n4. Withstand drivetrain loading  \r\n\r\nThe part was designed using Solidworks to create a parametric 3D model.  The mounting points on the rear subframe and the geometry needed to mate to the differential and tripod joints were known.  The placement of the differential relative to the subframe and the geometry of the part between the frame and diffrential needed to be designed.\r\n\r\nThe placement of the differential\r\n\r\nGeometry of part",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
