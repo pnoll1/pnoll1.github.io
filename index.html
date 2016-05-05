@@ -36,11 +36,6 @@
 <p>The projects below include current and previous products that I've designed.  I'll walk through the design process and analysis procedures for each.</p>
 
 <h2>
-<a id="adventure-motorcycle-bar-risers" class="anchor" href="#adventure-motorcycle-bar-risers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adventure Motorcycle Bar Risers</h2>
-
-<p>This product is being created to fix issues I've found while riding.</p>
-
-<h2>
 <a id="differential-mounts" class="anchor" href="#differential-mounts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Differential Mounts</h2>
 
 <p>This part was created for the WSU Formula SAE team.</p>
@@ -51,11 +46,45 @@
 3. Mate to tripod joints<br>
 4. Withstand drivetrain loading  </p>
 
-<p>The part was designed using Solidworks to create a parametric 3D model.  The mounting points on the rear subframe and the geometry needed to mate to the differential and tripod joints were known.  The placement of the differential relative to the subframe and the geometry of the part between the frame and diffrential needed to be designed.</p>
+<p>The part was designed using Solidworks to create a parametric 3D model.  The mounting points on the rear subframe and the geometry needed to mate to the differential and tripod joints were known.  The placement of the differential relative to the subframe and the geometry of the part between the frame and differential needed to be designed.</p>
 
 <p>The placement of the differential was based on the wheel movement, pass-throughs on the rear subframe for the axles and allowable axle angles for tripod joints at wheel and differential. The wheel movement was determined using the static ride height and suspension travel to determine the range of motion. The wheel movement information was modeled in Solidworks and used with the model of the rear subframe to determine where the differential could be placed and keep the axles from hitting the subframe and stay within the angle limits of the tripod joints.</p>
 
-<p>Geometry of part</p>
+<p>The geometry of the part between the frame mounts and differential mounting was determined by running a static elastic FEA using Solidworks Simulation on several different iterations of the part. A static elastic FEA was used given the lack of a realistic loading curve that would be needed for a dynamic simulation and the lack resources to collect data for a realistic load curve. The static elastic FEA was setup to model the worst case loading: the car accelerating from a stop with full power and the tires having enough grip to completely resist power from the engine.  This case would direct all the torque from the engine into the differential mounts. The loading was applied to the inside of the differential mount surface while holding the part fixed at the frame mounting points. The simulation was run with with smaller meshes until it was clear that the results converged to ensure the mesh sized was sufficiently fine.  The geometry was then refined until the peak stress was equal to yield stress with a factor of safety(FOS) of 2. The FOS was to balance the need for low weight with accounting for the fatigue loading the part would see.</p>
+
+<p>The final geometry:<br>
+(Picture of part)</p>
+
+<p>Results:<br>
+Part worked successfully through through testing and competition.</p>
+
+<h2>
+<a id="adventure-motorcycle-bar-risers" class="anchor" href="#adventure-motorcycle-bar-risers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adventure Motorcycle Bar Risers</h2>
+
+<p>In Progress</p>
+
+<p>This product is being created to fix issues I've found while riding. It will solve the issue of poor ergonomics on adventure bikes for those who ride the bike while standing and sitting. The standing and sitting positions have vastly different ergonomics and all current solutions force the user to sacrifice when using the motorcycle in one of the positions. These risers will allow the rider to quickly adjust the risers between positions that are suited for standing and sitting.</p>
+
+<p>The design starts with gathering information for the house of quality to determine what parts of the design will be important for a successful product. This information is gathered through forum postings, real world testing by myself, benchmarking of similar products and patents.</p>
+
+<p>(Insert HOQ)</p>
+
+<h3>
+<a id="conceptual-designs" class="anchor" href="#conceptual-designs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conceptual Designs</h3>
+
+<p>Conceptual designs are created to based on the technical requirements created. Each conceptual design is modeled using FreeCAD to visualize how the parts be assembled and used. The conceptual designs are rated based on the technical requirements with the best being taken to the detail design phase.</p>
+
+<p>(Pics of conceptual 3D models)</p>
+
+<h3>
+<a id="detail-design" class="anchor" href="#detail-design" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Detail Design</h3>
+
+<h3>
+<a id="analysis" class="anchor" href="#analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Analysis</h3>
+
+<p>The parts will be analyzed using ELMER for FEA on complex parts. Loads will be determined assuming the design will need to be equal in strength to similar products. Analysis is planned to be static elastic FEA to keep analysis quick and simple. </p>
+
+<p>Production will be optimized for small production runs to minimize up front costs and market for this product is not large enough to justify tooling costs for mass production. This aligns well with the market given most similar products are CNC machined.</p>
         </section>
 
         <aside id="sidebar">
