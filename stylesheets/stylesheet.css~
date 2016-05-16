@@ -71,7 +71,7 @@ ul#nav li a
   /*font: bold 120% Arial, Helvetica, sans-serif;*/
   height: 24px;
   margin: 10px 0 0 20px;
-  /*text-shadow: 0px -1px 0px #000;*/
+  text-shadow: 0px -1px 0px #000;
   padding: 6px 20px 0 20px;
   background: transparent; 
   border-radius: 7px 7px 7px 7px;
