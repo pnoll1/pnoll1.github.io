@@ -44,9 +44,9 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="design.html">Design</a></li>
-            <li><a href="stress analysis">Stress Analysis</a></li>
-            <li><a href="3d modeling">3D Modeling</a></li>
-            <li class="active"><a href="programming">Programming</a></li>
+            <li><a href="stress analysis.html">Stress Analysis</a></li>
+            <li><a href="3d modeling.html">3D Modeling</a></li>
+            <li class="active"><a href="programming.html">Programming</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -56,8 +56,57 @@
 
       <div class="starter-template">
         <h1>Programming</h1>
-        <p>COMING SOON</p>
-
+        
+        <h2>Tally Block Fill</h2>
+        
+				<p>I started this project to eliminate manual copying of information from one excel sheet to another.
+				This step is part of the process of creating lift plans so I will describe the process in full to give
+				context to the situation</p>
+				
+				<p>The process for creating a lift plan is as follows:
+				<ol>
+					<li>Creating autocad drawings of each lift</li>
+					<li>Creating a coversheet in Excel listing details of each lift</li>
+					<li>Filling out a tally block Excel sheet for each lift using information from the coversheet</li>
+					<li>Copying the tally block Excel sheet into the elevation view of each drawing</li>
+					<li>Exporting all the drawings to a PDF</li>
+					<li>Assembling a PDF packet of the drawings and coversheet</li>
+				 </ol>
+				 </p>
+				
+				<p>The manual copying of information from the coversheet to the tally block sheet took time and lead to errors.
+				in the middle of the process which would result in having to redo the tally block sheet and all the steps after 
+				which would cost a large amount of time</p>
+				  
+				<p>I solved this issue by learning VBA, writing a macro to automatically copy the latest tally block workbook
+				to the job folder, select the correct worksheet, rename the workbook and fill in the appropriate worksheet.</p>
+				
+				<p>The result has been a large decrease in errors on the drawings and time savings from the elimination of
+				errors that would force repeating steps in the lift plan process.</p>
+				
+				<p>The code is available to view on <a href="https://github.com/pnoll1/TallyBlockFill">Github</a>.</p>        
+        
+        <h2>Crane Capacity Look Up</h2>
+	        <h3>Excel Capacity Look Up</h3>
+		        <p>I started this project to automate looking up crane capacities. The manual process of looking up crane capacities
+		         for each lift would involve using information on the Excel cover sheet to find the capacity in a
+		        3" binder full of charts for every configuration of every crane in the fleet.  This is a very tedious process that
+		        can take a lot of time since each lift plan typically involves 10+ lifts and all lifts have to be rechecked anytime
+		        the crane moves. The crane position in a lift plan will typically change twice. This means I look up capacities
+		        20+ times for each lift plan and manually enter the data into the coversheet.</p>
+					<p>I automated this process by creating a python script to take advantage of the freely available modules for it.  The capacity information for
+					each crane is entered into a sqlite database.  The python script uses the xlwings module to pull the information needed from
+					the Excel coversheet, then uses the sqlite module to query the database and fills in the capacity cell on the coversheet
+					for each lift using the information from the database.</p>
+					<p>The result is a process that save several minutes every time capacities are looked up and eliminates data entry errors.
+					The elimination of data entry errors have a time saving affect on the lift plan process as looking up capacities is part of
+					step 2 of creating a lift plan, see Tally Block Fill section for lift plan creation process.</p>
+					<p>The code is available to view on <a href="https://github.com/pnoll1/capLookUp">Github</a>, it's the xlCapLookUp.py file in this repository.</p>
+				<h3>Capacity Look Up with GUI</h3>
+					<p>A byproduct of the Excel capacity look up project is the GUI program I created to look up crane capacities using the database already 
+					created for the above project.  The user enters the information in the text boxes and the program will query the database to find the 
+					capacity of configuration for that crane and return it in the GUI.  This program could allow others to use the program to easily look up crane capacities without the 
+					3" binder and the GUI could be upgraded withs graphs to help in sizing cranes for jobs.</p>
       </div>
 
     </div><!-- /.container -->
