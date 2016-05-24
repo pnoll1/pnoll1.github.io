@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="author" content="Live session user" >
+    <meta name="author" content="pat" >
     <link rel="icon" href="../../favicon.ico">
 
     <title>Patrick Noll</title>
@@ -57,6 +57,14 @@
       <div class="starter-template">
         <h1>Programming</h1>
         
+			<h2>Relevant Skills</h2>        
+				<ul>
+				<li>Python</li>
+				<li>VBA</li>
+				<li>SQL</li>
+				<li>Basic HTML & CSS</li>
+				</ul>        
+        
         <h2>Tally Block Fill</h2>
         
 				<p>I started this project to eliminate manual copying of information from one excel sheet to another.
@@ -106,7 +114,8 @@
 					<p>A byproduct of the Excel capacity look up project is the GUI program I created to look up crane capacities using the database already 
 					created for the above project.  The user enters the information in the text boxes and the program will query the database to find the 
 					capacity of configuration for that crane and return it in the GUI.  This program could allow others to use the program to easily look up crane capacities without the 
-					3" binder and the GUI could be upgraded withs graphs to help in sizing cranes for jobs.</p>
+					3" binder and the GUI could be upgraded withs graphs to help in sizing cranes for jobs.<br> The GUI:<br>
+					<img class="img-responsive" src="images/CapLookUpGUI.PNG"></p>
       </div>
 
     </div><!-- /.container -->
