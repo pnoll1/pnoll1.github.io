@@ -47,6 +47,7 @@
             <li><a href="stress analysis.html">Stress Analysis</a></li>
             <li><a href="3d modeling.html">3D Modeling</a></li>
             <li><a href="programming.html">Programming</a></li>
+            <li><a href="work history.html">Work History</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -96,12 +97,14 @@
 			<p>Analysis results shown in Paraview:<br>
 			<img class="img-responsive" src="images/Screenshot.png" alt=""></p>
 			
-			<p>The part will be 3D printed in ABS upon receipt of my 3D printer and installed.</p>
+			<p>The 3D printed part including raft to ensure adhesion to printing surface:<br>
+			<img class="img-responsive" src="images/Handlebar Fix.png" alt=""></p>
 		   
 		   <h2>FSAE Brake System</h2>
 			   <p>As Brake Lead, I was in charge of the design and fabrication of the brake system. My design needed to follow the overall car goals of 
 			   simple and lightweight while minimizing cost. </p>
-			   <p>The design started by researching the FSAE competition rules and vehicle dynamics.   </p>
+			   <p>The design started by researching the FSAE competition rules and vehicle dynamics. Then I started working a strategy for the entire system working
+			   down to the component level for:</p>
 			   <ol>
 			   <li>Calipers</li>
 			   <li>Rotors</li>
@@ -111,6 +114,7 @@
 			   <li>Balance Bar</li>
 			   <li>Brake Pedal</li>
 			   </ol>
+			   <p>The system passed the braking test at competition and worked without incident during the events.</p>
       </div>
 
     </div><!-- /.container -->

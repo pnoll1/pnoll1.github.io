@@ -76,7 +76,7 @@
 	          <p>This part was designed for the WSU Formula SAE team using SolidWorks to create a 3D parametric model. The model was carefully created to make
 	          full use of the parametric features of SolidWorks by setting dimensions equal to dimensions in other parts. The mounting points for the rear sub-frame
 	          differential and tripod joints were constrained to the respective assemblies so my parts would automatically
-	          update when changes were made. The model is </p>
+	          update when changes were made.</p>
 				<p>The final geometry:<br>
 			<img class="img-responsive" src="images/Diff%20Mount%20.jpg"> </p>
       </div>

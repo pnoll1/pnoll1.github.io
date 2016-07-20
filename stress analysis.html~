@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="author" content="Live session user" >
+    <meta name="author" content="pat" >
     <link rel="icon" href="../../favicon.ico">
 
     <title>Patrick Noll</title>
@@ -56,8 +56,23 @@
 
       <div class="starter-template">
         <h1>Stress Analysis</h1>
-        <p>COMING SOON</p>
-
+        <h2>Relevant Skills</h2>
+        <ul>
+        <li>FEA</li>
+        <li>Programming</li>
+        </ul>
+        
+        <h2>Bar End Weight Fix</h2>
+        <p>This part was designed to be 3D printed and press fit into a handlebar to serve as a mounting point for a bar end weight and hand guards on a motor
+        cycle.</p>
+        <p>Calculations in Python were used to confirm that a 3D printed ABS part would be a reasonable solution based on stress due to press fit, pull out 
+        force of press fit and strength of threads.</p>
+        <p>A simplified 3D model of the part was created and imported into ELMER for meshing and FEA.  The FEA was run as a static linear analysis using standard
+        ABS material properties as no data was available on how 3D printing would affect part strength. The part was loaded by defining the displacement of the 
+        outside surface as the max interference of the press fit.  The results showed that the highest stress in the part was below yield strength, confirming that
+        a linear analysis was the correct choice.  The part geometry was iteratively optimized to remove excess material using additional FEA runs as guidance. </p>
+			<p>Analysis results shown in Paraview:<br>
+			<img class="img-responsive" src="images/Screenshot.png" alt=""></p>
       </div>
 
     </div><!-- /.container -->

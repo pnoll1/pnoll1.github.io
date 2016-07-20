@@ -47,6 +47,7 @@
             <li><a href="stress analysis.html">Stress Analysis</a></li>
             <li><a href="3d modeling.html">3D Modeling</a></li>
             <li><a href="programming.html">Programming</a></li>
+            <li><a href="work history.html">Work History</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -57,12 +58,18 @@
       <div class="starter-template">
         <h1> Welcome to my portfolio website!</h1>
         <p> <img class="img-responsive" src="images/pjn.jpg"></p>
-        <p>Use the menu above to view examples of my work.<br>
-        Go to <a href="https://www.linkedin.com/in/patricknoll">LinkedIn</a> view my work history or contact me.</p>
+        <p>A brief introduction, I started in engineering during my undergrad by designing and fabricating parts for the WSU Formula SAE team. Between my 
+        junior and senior years, I had the opportunity to intern at an aerospace company and learn about all aspects of fiber reinforced plastics.  My senior year I worked my way up to
+        Brake System Lead for the Formula SAE team and completed a successful system. After graduating, I took a position in product development at a
+         leading heavy truck and bus manufacturer in IL focused on evaluating competitor products. When the company requested I transfer to vehicle 
+         integration, I took the position.  After 2.5 years in Illinois, I moved back to WA to be closer to friends and family.  I took a position at a heavy lift
+         company specializing in erect and dismantle of tower cranes.
+        </p>
+        <p>Use the menu above to view examples of my work. Work examples are mainly personal or non-profit projects due to NDAs with previous employers.<br>
+        Go to <a href="https://www.linkedin.com/in/patricknoll">LinkedIn</a> to view my work history or contact me.</p>
       </div>
 
     </div><!-- /.container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
