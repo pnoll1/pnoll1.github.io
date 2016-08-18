@@ -103,21 +103,19 @@
 		   <h2>FSAE Brake System</h2>
 			   <p>As Brake Lead, I was in charge of the design and fabrication of the brake system. My design needed to follow the overall car goals of 
 			   simple and lightweight while minimizing cost. </p>
-			   <p>The design started by researching the FSAE competition rules and vehicle dynamics. Then I started working a strategy for the entire system working
-			   down to the component level for:</p>
+			   <p>The  High level system specifications:</p>
 			   <ol>
-			   <li>Calipers</li>
-			   <li>Rotors</li>
-			   <li>Hats</li>
-			   <li>Brake Lines</li>
-			   <li>Master Cylinders</li>
-			   <li>Balance Bar</li>
-			   <li>Brake Pedal</li>
+			   <li>Calipers: Brembo P32 2 piece calipers mounted outboard</li>
+			   <li>Rotors: Carbon steel with max diameter allowed by calipers</li>
+			   <li>Hats: CNC Machined Al</li>
+			   <li>Master Cylinders: 1 for Front & 1 for Rear sized for dynamic braking conditions</li>
+			   <li>Balance Bar: splits force between front and rear master cylinders to fine tune brake force distribution</li>
+			   <li>Brake Pedal: CNC Machined Al built to handle FSAE mandated max force</li>
 			   </ol>
-			   <p>The system passed the braking test at competition and worked without incident during the events.</p>
+			   <p>The system was successful as the car passed inspection at the FSAE competition and the brake system had no issues during the competition.</p>
       </div>
 
-    </div><!-- /.container -->
+    </div>
 
 
     <!-- Bootstrap core JavaScript
