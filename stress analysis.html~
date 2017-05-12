@@ -47,6 +47,7 @@
             <li class="active"><a href="stress analysis.html">Stress Analysis</a></li>
             <li><a href="3d modeling.html">3D Modeling</a></li>
             <li><a href="programming.html">Programming</a></li>
+            <li><a href="work history.html">Work History</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -81,7 +82,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="/js/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
