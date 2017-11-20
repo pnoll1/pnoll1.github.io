@@ -66,7 +66,7 @@
         <li>NX</li>
         <li>AutoCAD</li>
         </ul>
-
+        <div class="row">
         <h2>Turn Signal Housing</h2>
 	        <p>The turn signal housings will be used as replacements for a V Strom motorcycle and will reuse the mounting point and lens.
 	         Measurements of the physical parts were taken using calipers. The housing was modeled using Autodesk Inventor. The first revision was created to utilize
@@ -74,14 +74,12 @@
 	         <p>The second revision was created after it was found the LED bulbs were not bright enough
 	         in daylight. The housing was redesigned to fit a flat LED array. The length of the loft was shortened, the back end of the housing increased and
 	          the light holder removed. The unchanged features did not need fixes due to proper sketch dimensioning and feature hierarchy.</p>
-
+        </div>
 	          Model is interactive, left click to spin, right click to pan, middle scroll to zoom
-           <div id="turnsignal"></div>
-				 <script src="js/three.min.js"></script>
-				 <script src="js/TrackballControls.js"></script>
-				 <script src="js/turnsignal.js"></script>
-           </div>
-
+        <div class="row webgl" id="holder">
+            <div class="col-xs-12" id="turnsignal"></div>
+        </div> 
+          
  			<div class="row">
 				<div class="col-sm-6">
  				<img class="img-responsive" src="images/turnsignal.jpg">
@@ -100,7 +98,7 @@
 			<img class="img-responsive" src="images/Diff%20Mount%20.jpg"> </p>
       </div>
 
-    </div><!-- /.container -->
+    </div> <!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -109,6 +107,9 @@
     <script src="js/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/three.min.js"></script>
+	 <script src="js/TrackballControls.js"></script>
+	 <script src="js/turnsignal.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
