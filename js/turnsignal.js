@@ -1,18 +1,18 @@
             
-var camera, controls, scene, renderer;
+var camera, controls, scene, renderer, cameraPosition;
 
 init()
 animate()
 
             function init(){
 
-
-                var SCREEN_WIDTH = window.innerWidth*0.66, SCREEN_HEIGHT = window.innerHeight*0.66;
+                var parent = document.getElementById("holder");
+                var SCREEN_WIDTH = parent.offsetWidth, SCREEN_HEIGHT = window.innerHeight/2;
                 var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 2000;
-
+                var cameraPosition = window.innerHeight/6
                 renderer = new THREE.WebGLRenderer({antialias: true} );
                 renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
-                document.getElementById("turnsignal").append(renderer.domElement); 
+                document.getElementById("turnsignal").append(renderer.domElement);
                 scene = new THREE.Scene();
                 camera = new THREE.PerspectiveCamera(
                     VIEW_ANGLE,      // Field of view
@@ -20,7 +20,7 @@ animate()
                     NEAR,            // Near plane
                     FAR              // Far plane
                 );
-                camera.position.set( 0, 0, 400 );
+                camera.position.set( 0, 0, cameraPosition );
                 //camera.lookAt( scene.position );
                  // placeholder for the FreeCAD camera
                 
