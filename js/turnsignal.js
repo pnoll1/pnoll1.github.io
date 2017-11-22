@@ -21,23 +21,10 @@ animate()
                     FAR              // Far plane
                 );
                 camera.position.set( 0, 0, cameraPosition );
-                //camera.lookAt( scene.position );
-                 // placeholder for the FreeCAD camera
-                
+
                 controls = new THREE.TrackballControls( camera, renderer.domElement );
                 controls.minDistance = 200;
                 controls.maxDistance = 500;
-/*
-                controls.rotateSpeed = 1.0;
-                controls.zoomSpeed = 1.2;
-                controls.panSpeed = 1;
-                controls.noZoom = false;
-                controls.noPan = false;
-                controls.staticMoving = true;
-                controls.dynamicDampingFactor = 0.3;
-                controls.keys = [ 65, 83, 68 ];
-        */
-            
 
                var geom = new THREE.Geometry();
                 var v0 = new THREE.Vector3(-30.0161392185,16.2537336277,28.8991108128);
@@ -26583,14 +26570,11 @@ animate()
                 wire.vertices.push(new THREE.Vector3(18.9716161539, 13.5, 60.0));
                 var line = new THREE.Line(wire, linematerial);
                 scene.add(line);
- // placeholder for the FreeCAD objects
         
                 var light = new THREE.PointLight( 0xFFFF00 );
                 light.position.set( -10000, -10000, 10000 );
                 scene.add( light );
-        
-                //renderer.render( scene, camera );
-                
+
                 animate();
             };
             function animate(){
