@@ -1,8 +1,18 @@
             
 var camera, controls, scene, renderer, cameraPosition;
+window.onLoad = init();
+window.addEventListener( 'resize', onWindowResize, false );
 
-init()
-animate()
+function onWindowResize(){
+    var parent = document.getElementById("holder");
+    var SCREEN_WIDTH = parent.offsetWidth, SCREEN_HEIGHT = window.innerHeight/2;
+    ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT
+    camera.aspect = ASPECT;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
+
+}
 
             function init(){
 
