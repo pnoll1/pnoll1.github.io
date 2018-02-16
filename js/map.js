@@ -1,4 +1,4 @@
-var baselayers, ways, all, controls_layers, mymap, overlays, mapbox;
+var baselayers, ways, nodes, controls_layers, mymap, overlays, mapbox;
 //var mymap = L.map('map').setView([47.810, -122.384], 9); 
 
 var mapbox = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -27,15 +27,15 @@ $.getJSON('edits.geojson',function (data) {
     	return false;
     }
     });
-    var all = L.geoJSON(data,{
+    var nodes = L.geoJSON(data,{
     style: function (feature) {
-        return {};
+        return {stroke:false};
     }
     });
     ways.addTo(mymap);
-    all.addTo(mymap);
+    nodes.addTo(mymap);
     var overlays = {
-    "all": all,
+    "nodes": nodes,
     "ways": ways
     };
 
