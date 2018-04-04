@@ -1,5 +1,4 @@
-var baselayers, ways, nodes, controls_layers, mymap, overlays, mapbox;
-//var mymap = L.map('map').setView([47.810, -122.384], 9); 
+var baselayers, ways, nodes, controls_layers, mymap, overlays, mapbox, featureCount;
 
 var mapbox = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -29,7 +28,7 @@ $.getJSON('edits.geojson',function (data) {
     });
     var nodes = L.geoJSON(data,{
     style: function (feature) {
-        return {stroke:false};
+        return {stroke:false,fill:false};
     }
     });
     ways.addTo(mymap);
@@ -38,21 +37,23 @@ $.getJSON('edits.geojson',function (data) {
     "nodes": nodes,
     "ways": ways
     };
-
+    featureCount = data.features.length.toString();
     var controls_layers = L.control.layers(baselayers, overlays);
     controls_layers.addTo(mymap);
+    counter.addTo(mymap);
 });
+/*
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (mymap) {
-
     var div = L.DomUtil.create('div', 'legend');
-    div.innerHTML = 'OSM Edits'
-        //items = ['Markers', 'Ways'],
-        //labels = [<i style='background'>L.marker()</i>, 'Areas, Buildings, Streets'];
-
-
+    div.innerHTML = 'OSM Edits';
     return div;
 };
-
 legend.addTo(mymap);
-                    
+*/
+var counter = L.control({position: 'bottomright'});
+counter.onAdd = function(mymap) {
+    var divCounter = L.DomUtil.create('div', 'counter');
+    divCounter.innerHTML = 'Features: '+featureCount;
+    return divCounter;
+};
