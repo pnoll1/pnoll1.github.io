@@ -40,17 +40,17 @@ $.getJSON('edits.geojson',function (data) {
     featureCount = data.features.length.toString();
     var controls_layers = L.control.layers(baselayers, overlays);
     controls_layers.addTo(mymap);
+    legend.addTo(mymap);
     counter.addTo(mymap);
 });
-/*
+
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (mymap) {
     var div = L.DomUtil.create('div', 'legend');
-    div.innerHTML = 'OSM Edits';
+    div.innerHTML = 'OSM Last Touched Edits';
     return div;
 };
-legend.addTo(mymap);
-*/
+
 var counter = L.control({position: 'bottomright'});
 counter.onAdd = function(mymap) {
     var divCounter = L.DomUtil.create('div', 'counter');
