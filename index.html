@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Patrick Noll Portfolio Website">
+    <meta name="description" content="Patrick Noll's skills showcase">
+    <meta name="keywords" content="OpenStreetMap, osm, software, mechanical, engineer">
     <meta name="author" content="Patrick Noll" >
     <link rel="icon" href="../../favicon.ico">
 
@@ -48,14 +49,10 @@
                     <a class="navbar-brand" href="index.html">Patrick Noll</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
-                  <!--<ul class="nav  navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="stress analysis.html">Stress Analysis</a></li>
-                    <li><a href="3d modeling.html">3D Modeling</a></li>
-                    <li><a href="programming.html">Programming</a></li>
-                    <li><a href="work history.html">Work History</a></li>
-                  </ul> -->
+                  <ul class="nav  navbar-nav">
+                    <li><a href="software.html">Software</a></li>                    
+                    <li><a href="design.html">Mechanical</a></li>
+                  </ul>
                 </div><!--/.nav-collapse -->
             </div>
             </nav> 
@@ -63,36 +60,43 @@
             <div class="inner cover">
                 <div class="starter-template">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <h3></h3>
-                            <h3>Latest</h3>
-                            First Pull Request merged for Lib.reviews<br>
+                        <div class="col-sm-10">
+                                <h3>Latest</h3>
+                                First Pull Request merged for Lib.reviews<br>
+                                Data transformation started for Bothell OSM Import<br>
+                                <hr>
+                                <h3>Visualizing OSM Edits</h3>
+                                <p>I decided to visualize my contributions to OSM over the last few months
+                                to see what impact I had on the map.</p>
+                                
+                                <p>After a short search, I found that "last touched" edits could be downloaded from the
+                                overpass API.  This includes all features that haven't been modified after I created/modified them.
+                                  Using the Leaflet js library to render the edit data with mapbox streets tiles you end
+                                  up with a fairly crowded map of points and ways.</p>
+                                  
+                                <p>So if you've been using OSMAND to navigate in the exotic locales of Lynnwood or Bremerton you've
+                                probably run into some of my work.</p>
+                                <div id="map"></div>
+                            </div>
+                            <div class="col-sm-2">
+                            <h3>Portfolios</h3>
+                            <a href="software.html" class="thumbnail">
+                            <img class="img-responsive" src="images/Konsole_icon.svg" alt="..." width="45%">
+                            <div class="caption"> <h5>Software</h5></div>
+                            </a>
+                            <a href="design.html" class="thumbnail">
+                            <img class="img-responsive" src="images/GEARS.svg" alt="..." width="55%">
+                            <div class="caption"> <h5>Mech</h5></div>
+                            </a>
                             <h3>Contact</h3>
                             <a href="mailto:patricknoll.com@respectmyprivacy.com">Email</a><br>
                             <a href="https://www.linkedin.com/in/patricknoll">LinkedIn</a><br>
                             <a href="https://github.com/pnoll1">Github</a><br>
                             <a href="https://www.openstreetmap.org/user/patrick noll">OpenStreetMap</a><br>
                         </div>
-                        <div class="col-sm-6" id="map">
-                        </div>
-                    </div>
-                    <h2>Portfolios</h2>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="software.html" class="thumbnail">
-                            <img class="img-responsive" src="images/Konsole_icon.svg" alt="..." width="45%">
-                            <div class="caption"> <h3>Software</h3></div>
-                           </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="design.html" class="thumbnail">
-                            <img class="img-responsive" src="images/GEARS.svg" alt="..." width="55%">
-                            <div class="caption"> <h3>Mechanical</h3></div>
-                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
