@@ -50,35 +50,37 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav  navbar-nav">
-                    <li><a href="software.html">Software</a></li>                    
+                    <li><a href="software.html">Software</a></li>
                     <li><a href="design.html">Mechanical</a></li>
+                    <li class="visible-xs"><a href="#contact">Contact</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
             </div>
-            </nav> 
+            </nav>
 
             <div class="inner cover">
                 <div class="starter-template">
                     <div class="row">
                         <div class="col-sm-10">
-                                <h3>Latest</h3>
-                                First Pull Request merged for Lib.reviews<br>
-                                Data transformation started for Bothell OSM Import<br>
-                                <hr>
-                                <h3>Visualizing OSM Edits</h3>
-                                <p>I decided to visualize my contributions to OSM over the last few months
-                                to see what impact I had on the map.</p>
-                                
-                                <p>After a short search, I found that "last touched" edits could be downloaded from the
-                                overpass API.  This includes all features that haven't been modified after I created/modified them.
-                                  Using the Leaflet js library to render the edit data with mapbox streets tiles you end
-                                  up with a fairly crowded map of points and ways.</p>
-                                  
-                                <p>So if you've been using OSMAND to navigate in the exotic locales of Lynnwood or Bremerton you've
-                                probably run into some of my work.</p>
-                                <div id="map"></div>
-                            </div>
-                            <div class="col-sm-2">
+                          <h3>Latest</h3>
+                          <a href="#signupLanguage"> Second Pull Request merged for Lib.reviews!</a><br>
+                          <a href="#returnToPath"> First Pull Request merged for Lib.reviews!</a><br>
+                          Data transformation started for Bothell OSM Import<br>
+                          <hr>
+                          <h3>Visualizing OSM Edits</h3>
+                          <p>I decided to visualize my contributions to OSM over the last few months
+                          to see what impact I had on the map.</p>
+
+                          <p>After a short search, I found that "last touched" edits could be downloaded from the
+                          overpass API.  This includes all features that haven't been modified after I created/modified them.
+                            Using the Leaflet js library to render the edit data with mapbox streets tiles you end
+                            up with a fairly crowded map of points and ways.</p>
+
+                          <p>So if you've been using OSMAND to navigate in the exotic locales of Lynnwood or Bremerton you've
+                          probably run into some of my work.</p>
+                          <div id="map"></div>
+                        </div>
+                        <div class="col-sm-2 hidden-xs">
                             <h3>Portfolios</h3>
                             <a href="software.html" class="thumbnail">
                             <img class="img-responsive" src="images/Konsole_icon.svg" alt="..." width="45%">
@@ -94,18 +96,48 @@
                             <a href="https://github.com/pnoll1">Github</a><br>
                             <a href="https://www.openstreetmap.org/user/patrick noll">OpenStreetMap</a><br>
                         </div>
+                        <div class="col-sm-10" id="returnToPath">
+                          <hr>
+                          <h3>Lib.Reviews Return To Path</h3>
+                          <p>First patch merged for Lib.Reviews! This patch is an ease of use feature for users.  When you follow
+                          a link to a review on lib.reviews and decide to sign in or register from that page, you will now be redirected
+                          back to the review you first visited.</p>
+                          <p>This feature will be very nice to have as lib.reviews grows and users become more likely to enter the site
+                          from a review link.</p>
                         </div>
+                        <div class="col-sm-10" id="signupLanguage">
+                          <hr>
+                          <h3>Lib.Reviews Signup Language</h3>
+                          <p>Second patch merged for Lib.Reviews! This patch ia a hidden ease of use feature for non-english users.
+                          Users can post links with a signupLanguage query to advertise lib.reviews in any supported language. Say all
+                          your friends speak esperanto, you would send them <a href="https://lib.reviews/register?signupLanguage=eo">lib.reviews/register?signupLanguage=eo</a>
+                          so the website will show up in esperanto without having to search for language drop down.</p>
+                          <p>This should help new users feel like the website is for them instead of an english website that happens to have an interface in their language.</p>
+                        </div>
+                      </div>
+                      <footer class="visible-xs" id="contact">
+                        <h3>Portfolios</h3>
+                        <a href="software.html" class="thumbnail">
+                        <img class="img-responsive" src="images/Konsole_icon.svg" alt="..." width="45%">
+                        <div class="caption"> <h5>Software</h5></div>
+                        </a>
+                        <a href="design.html" class="thumbnail">
+                        <img class="img-responsive" src="images/GEARS.svg" alt="..." width="55%">
+                        <div class="caption"> <h5>Mech</h5></div>
+                        </a>
+                        <h3>Contact</h3>
+                        <a href="mailto:patricknoll.com@respectmyprivacy.com">Email</a><br>
+                        <a href="https://www.linkedin.com/in/patricknoll">LinkedIn</a><br>
+                        <a href="https://github.com/pnoll1">Github</a><br>
+                        <a href="https://www.openstreetmap.org/user/patrick noll">OpenStreetMap</a><br>
+                      </footer>
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-           <!-- <button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-console" ></span> Software
-           </button> 
-                     <button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-cog" ></span> Mechanical
-          </button>-->
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
