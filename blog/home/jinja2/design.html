@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Patrick Noll Design Examples">
+    <meta name="author" content="Patrick Noll" >
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Patrick Noll</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{static}}/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{static}}/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{static}}/starter-template.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="nav navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Patrick Noll</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav masthead-nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="mechanical">Design</a></li>
+            <li><a href="stress analysis">Stress Analysis</a></li>
+            <li><a href="3d modeling.html">3D Modeling</a></li>
+            <li><a href="work history.html">Work History</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Design Skills</h1>
+  		<ul>
+    		<li>Design for Manufacturing</li>
+    		<li>Design for Assembly</li>
+		</ul>  
+        <hr>
+		<h2>
+		<a id="differential-mounts" class="anchor" href="#differential-mounts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Differential Mounts</h2>
+		
+		<p>This part was created for the WSU Formula SAE team.</p>
+		
+		<p>The part was designed to:<br>
+		<ol>
+		<li>Hold axles in correct alignment relative to wheel</li>
+		<li>Mate to differential</li>
+		<li>Mate to tripod joints</li>
+		<li>Withstand drivetrain loading</li>
+		</ol>
+		</p>
+		
+		<p>The part was designed using Solidworks to create a parametric 3D model. The max loads on the part were determined using hand calcuations. Iterations of the model were run in Solidworks Simulation until the part was optimized with the least amount of material needed to resist the loading.</p>
+		
+		<p>The final geometry:<br>
+		<img class="img-responsive" src="images/Diff%20Mount%20.jpg"> </p>
+		
+		<p>Results:<br>
+		Part worked successfully through through testing and competition.</p>
+		<hr>
+		<h2>
+		<a id="bar-end-weight-fix" class="anchor" href="#bar-end-weight-fix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bar End Weight Fix</h2>
+		
+		<p>This part was created to replace a lost part on a V Strom motorcycle.</p>
+		
+		<p>The original part was positioned inside of the handlebars and accepted an M6 screw that held the bar end weight to the handlebars. I decided to use a press fit on a 3D printed part for the ease of manufacturing and assembly. Calculations in Python were used to confirm that a 3D printed ABS part would be a reasonable solution based on stress due to press fit, pull out force of press fit and strength of threads.</p>
+		
+		<p>A 3D model of the part was created in FreeCAD. FEA of a simplified version of the model was analysed in ELMER. The part was then optimized by removing material based on the initial analysis and ran again.</p>
+	   <div class="row">
+		<div class="col-sm-6">
+			<p>Analysis results shown in Paraview:<br>
+			<img class="img-responsive" src="images/Screenshot.png" alt="">
+		</div>
+		   <div class="col-sm-6">
+			The 3D printed part including raft:<br>
+			<img class="img-responsive" src="images/Handlebar Fix.png" alt=""></p>
+	       </div>
+	   </div>
+	   <hr>
+	   <h2>FSAE Brake System</h2>
+		   <p>As Brake Lead, I was in charge of the design and fabrication of the brake system. My design needed to follow the overall car goals of 
+		   simple and lightweight while minimizing cost. </p>
+		   <p>The  High level system specifications:</p>
+		   <ol>
+		   <li>Calipers: Brembo P32 2 piece calipers mounted outboard</li>
+		   <li>Rotors: Carbon steel with max diameter allowed by calipers</li>
+		   <li>Hats: CNC Machined Al</li>
+		   <li>Master Cylinders: 1 for Front & 1 for Rear sized for dynamic braking conditions</li>
+		   <li>Balance Bar: splits force between front and rear master cylinders to fine tune brake force distribution</li>
+		   <li>Brake Pedal: CNC Machined Al built to handle FSAE mandated max force</li>
+		   </ol>
+		   <p>The system was successful as the car passed inspection at the FSAE competition and the brake system had no issues during the competition.</p>
+		<hr>
+		<h2>Gear Train Tap Handle</h2>
+			<p>Tap handle designed to mimic a functional gear train.  The prototype pictured was printed in 4 pieces to minimize supports needed during printing.
+			The pieces were then assembled using a combination of superglue and plastic welding.</p>
+			Next steps:  
+			<ul><li>Investigate revising print settings to improve tooth quality</li>
+			<li>Remove unnecessary material to lower cost and weight</li>
+			<li>Investigate option to manufacture using CNC machine</li>
+			</ul>
+		<div class="row">
+		<div class="col-sm-6">
+			<p>Front view:<br>
+			<img class="img-responsive" src="images/TapHandleFront.jpg" alt="">
+		</div>
+		<div class="col-sm-6">
+			Side view:<br>
+			<img class="img-responsive" src="images/TapHandleSide.jpg" alt=""></p>
+			</div>
+			</div>
+      </div>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-native.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
