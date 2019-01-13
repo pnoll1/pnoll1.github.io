@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -62,23 +64,25 @@
                 <div class="starter-template">
                     <div class="row">
                         <div class="col-sm-10">
-                          <h3>Latest</h3>
+                          <h3>Recent</h3>
+                          <a href="#visualizingOsmEdits">Visualizing OSM Edits</a><br>
                           <a href="#signupLanguage"> Second Pull Request merged for Lib.reviews!</a><br>
                           <a href="#returnToPath"> First Pull Request merged for Lib.reviews!</a><br>
-                          Data transformation started for Bothell OSM Import<br>
                           <hr>
-                          <h3>Visualizing OSM Edits</h3>
-                          <p>I decided to visualize my contributions to OSM over the last few months
-                          to see what impact I had on the map.</p>
+                          <div id="LowVolumeProduction3dPrinting">
+                          <h3>Low Volume Production With 3D Printing and Open Source</h3>
+                          <h5>1/13/2019</h5>
+                          <p>I bought a Prusa i3 MK3 3D printer in mid 2018 to do some prototyping and low volume production.
+                            After doing some rapid prototyping, I came up with a product for organizing dewalt batteries.
+                            The polished dual iteration is pictured below.</p>
+		                      <img class="img-responsive" src="images/isometric no battery inside.jpg"> </p>
 
-                          <p>After a short search, I found that "last touched" edits could be downloaded from the
-                          overpass API.  This includes all features that haven't been modified after I created/modified them.
-                            Using the Leaflet js library to render the edit data with mapbox streets tiles you end
-                            up with a fairly crowded map of points and ways.</p>
+                          <p>The product was designed using parametric models in FreeCAD, stress calcs and costing with python,
+                            sliced with Slic3r PE, ran with Printrun or Octoprint all on a Debian desktop. Production went smooth
+                          until the printer became increasingly erratic on the first layer. Overall, 3D printing could be a viable
+                           production method if you can get hobby pricing AND reliability. Reliability still needs work.</p>
 
-                          <p>So if you've been using OSMAND to navigate in the exotic locales of Lynnwood or Bremerton you've
-                          probably run into some of my work.</p>
-                          <div id="map"></div>
+                          </div>
                         </div>
                         <div class="col-sm-2 hidden-xs">
                             <h3>Portfolios</h3>
@@ -95,6 +99,23 @@
                             <a href="https://www.linkedin.com/in/patricknoll">LinkedIn</a><br>
                             <a href="https://github.com/pnoll1">Github</a><br>
                             <a href="https://www.openstreetmap.org/user/patrick noll">OpenStreetMap</a><br>
+                        </div>
+                        <div class="col-sm-10" id="visualizingOsmEdits">
+                        <hr>
+                        <h3>Visualizing OSM Edits</h3>
+                        <p>I decided to visualize my contributions to OSM over the last few months
+                        to see what impact I had on the map.</p>
+
+                        <p>After a short search, I found that "last touched" edits could be downloaded from the
+                        overpass API.  This includes all features that haven't been modified after I created/modified them.
+                          Using the Leaflet js library to render the edit data with mapbox streets tiles you end
+                          up with a fairly crowded map of points and ways.</p>
+
+                        <p>So if you've been using OSMAND to navigate in the exotic locales of Lynnwood or Bremerton you've
+                        probably run into some of my work.</p>
+
+                        <p>1/13/2019 Update: Added marker cluster plugin to decrease loading time</p>
+                        <div id="map"></div>
                         </div>
                         <div class="col-sm-10" id="returnToPath">
                           <hr>
@@ -146,6 +167,7 @@
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
     integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
     crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <script src="js/map.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>

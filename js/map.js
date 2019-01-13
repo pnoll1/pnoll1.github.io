@@ -1,8 +1,9 @@
 var baselayers, ways, nodes, controls_layers, mymap, overlays, mapbox, featureCount;
 
 var mapbox = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,    
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    minZoom: 8,
+    maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoicG5vbGwiLCJhIjoiY2pkNDNyNmtzMHRtOTMzcWZ0Y2szdzh3eCJ9.g8tszbsYH0bVCcj7v8RAEQ'
 });
@@ -13,8 +14,7 @@ var mymap = L.map('map', {
     center: [47.810, -122.384],
     zoom: 9,
     layers: [mapbox]
-}); 
-
+});
 
 $.getJSON('edits.geojson',function (data) {
     var ways = L.geoJSON(data,{
@@ -32,10 +32,13 @@ $.getJSON('edits.geojson',function (data) {
     }
     });
     ways.addTo(mymap);
-    nodes.addTo(mymap);
+    var markers = L.markerClusterGroup({disableClusteringAtZoom: 17});
+    markers.addLayer(nodes);
+    mymap.addLayer(markers);
+
     var overlays = {
-    "nodes": nodes,
-    "ways": ways
+    "markers": markers,
+    "ways": ways,
     };
     featureCount = data.features.length.toString();
     var controls_layers = L.control.layers(baselayers, overlays);
