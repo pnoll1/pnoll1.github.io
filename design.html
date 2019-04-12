@@ -60,13 +60,34 @@
   		<ul>
     		<li>Design for Manufacturing</li>
     		<li>Design for Assembly</li>
-		</ul>  
+		</ul>
         <hr>
+    <h2>
+		<a id="battery-holder-dewalt" class="anchor" href="#battery-holder-dewalt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dewalt Battery Holder</h2>
+
+		<p>The product started as solution to the problem of organizing batteries in form that allows quick mounting and easy access. The product started with a customer focus to ensure
+    it added value to the end users. The major way this was achieved was minimizing the work to mount it since competitors were using 3+ screws to mount 1 battery. This meant a thick back was
+    required to direct the load back to mounting points</p>
+
+    <p>Single holder annotared with major design features:<br>
+		<img class="img-responsive" src="images/Isometric View Marked Up.jpg"> </p>
+
+		<p>The part was designed using FreeCAD to create a parametric 3D model while refining the fitment based on prototype prints that were used to check fitment with the batteries.
+      The max stress on the part in all orientations were estimated using hand calcuations. The material properties had to be estimated using data from a Makerbot study on pritned parts to account for the interlaminar strength.
+    </p>
+
+   <p>The product was optimized for 3d printing speed by leaving the back as a box to take advantage of infill speeds being 2.75 times faster than perimeters. The corners in the xy plane were
+     filleted for an additional 10 minute gain. The thin wall portions were improved by leveraging the parametric model so the wall thickness were multiples of
+     the perimeter extrusion width. Modifier meshes in Slic3r were then used to change print characteristics on the target areas only increasing strength, consistency and print speed.
+
+    <p>Results:<br>
+		Dual holders were well liked by customers, but sales numbers were hindered by consistent issues with the 3d printers bought for production. </p>
+		<hr>
 		<h2>
 		<a id="differential-mounts" class="anchor" href="#differential-mounts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Differential Mounts</h2>
-		
+
 		<p>This part was created for the WSU Formula SAE team.</p>
-		
+
 		<p>The part was designed to:<br>
 		<ol>
 		<li>Hold axles in correct alignment relative to wheel</li>
@@ -75,22 +96,22 @@
 		<li>Withstand drivetrain loading</li>
 		</ol>
 		</p>
-		
+
 		<p>The part was designed using Solidworks to create a parametric 3D model. The max loads on the part were determined using hand calcuations. Iterations of the model were run in Solidworks Simulation until the part was optimized with the least amount of material needed to resist the loading.</p>
-		
+
 		<p>The final geometry:<br>
 		<img class="img-responsive" src="images/Diff%20Mount%20.jpg"> </p>
-		
+
 		<p>Results:<br>
 		Part worked successfully through through testing and competition.</p>
 		<hr>
 		<h2>
 		<a id="bar-end-weight-fix" class="anchor" href="#bar-end-weight-fix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bar End Weight Fix</h2>
-		
+
 		<p>This part was created to replace a lost part on a V Strom motorcycle.</p>
-		
+
 		<p>The original part was positioned inside of the handlebars and accepted an M6 screw that held the bar end weight to the handlebars. I decided to use a press fit on a 3D printed part for the ease of manufacturing and assembly. Calculations in Python were used to confirm that a 3D printed ABS part would be a reasonable solution based on stress due to press fit, pull out force of press fit and strength of threads.</p>
-		
+
 		<p>A 3D model of the part was created in FreeCAD. FEA of a simplified version of the model was analysed in ELMER. The part was then optimized by removing material based on the initial analysis and ran again.</p>
 	   <div class="row">
 		<div class="col-sm-6">
@@ -104,7 +125,7 @@
 	   </div>
 	   <hr>
 	   <h2>FSAE Brake System</h2>
-		   <p>As Brake Lead, I was in charge of the design and fabrication of the brake system. My design needed to follow the overall car goals of 
+		   <p>As Brake Lead, I was in charge of the design and fabrication of the brake system. My design needed to follow the overall car goals of
 		   simple and lightweight while minimizing cost. </p>
 		   <p>The  High level system specifications:</p>
 		   <ol>
@@ -120,7 +141,7 @@
 		<h2>Gear Train Tap Handle</h2>
 			<p>Tap handle designed to mimic a functional gear train.  The prototype pictured was printed in 4 pieces to minimize supports needed during printing.
 			The pieces were then assembled using a combination of superglue and plastic welding.</p>
-			Next steps:  
+			Next steps:
 			<ul><li>Investigate revising print settings to improve tooth quality</li>
 			<li>Remove unnecessary material to lower cost and weight</li>
 			<li>Investigate option to manufacture using CNC machine</li>
@@ -151,4 +172,3 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-
